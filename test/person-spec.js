@@ -17,6 +17,7 @@ describe("Person class", () => {
     chai.spy.restore(console);
   });
 
+
   describe("Person constructor", () => {
     it("should set the firstName property", () => {
       expect(person).to.have.property("firstName");
@@ -34,6 +35,7 @@ describe("Person class", () => {
     });
   });
 
+
   describe("introduce instance method", () => {
     it("should call the introduce method", () => {
       person.introduce();
@@ -41,6 +43,7 @@ describe("Person class", () => {
       expect(consoleSpy).to.have.been.called.once.with(expected)
     });
   });
+
 
   describe("introducePeople static method", () => {
     it("should call the introduce method on each instance", () => {
